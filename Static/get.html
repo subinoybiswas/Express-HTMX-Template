@@ -1,11 +1,14 @@
+<h1>SEND A GET REQUEST</h1>
 <ul>
   <li>
-    <button>BOOKS</button>
+    <button hx-get="/get/books" hx-target="#response">BOOKS</button>
   </li>
   <li>
-    <button>MOVIES</button>
+    <button hx-get="/get/movies" hx-target="#response">MOVIES</button>
   </li>
   <li>
-    <button>TV SERIES</button>
+    <button hx-get="/get/tv" hx-target="#response">TV SERIES</button>
   </li>
 </ul>
+
+<div id="response"></div>

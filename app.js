@@ -1,5 +1,6 @@
 const express = require("express");
 const postRoutes = require("./routes/post");
+const getRoutes = require("./routes/get");
 const PageRoute = require("./routes/postPage.js");
 
 var path = require("path");
@@ -17,6 +18,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/post", postRoutes);
+app.use("/get", getRoutes);
 app.use("/page", PageRoute);
 
 app.listen(PORT);
