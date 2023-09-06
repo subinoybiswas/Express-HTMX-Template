@@ -16,6 +16,9 @@ app.set(express.static(path.join(__dirname, "views")));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views/index.html"));
 });
+app.get("/home", (req, res) => {
+  res.sendFile(path.join(__dirname, "views/index.html"));
+});
 
 app.use("/post", postRoutes);
 app.use("/get", getRoutes);

@@ -11,34 +11,27 @@
     ></script>
   </head>
   <body>
-    <div id="#parent-div">
-      <div id="response"></div>
-      <button
-        hx-get="/page/get"
-        hx-trigger="click"
-        hx-target="#response"
-        hx-swap="innerHTML"
-      >
-        GET
-      </button>
+    <div id="all">
+      <div id="parent-div">
+        <div id="response"></div>
+        <button
+          hx-get="/page/get"
+          hx-trigger="click"
+          hx-target="#parent-div"
+          hx-swap="innerHTML"
+        >
+          GET
+        </button>
 
-      <button
-        hx-get="/page/post"
-        hx-trigger="click"
-        hx-target="#response"
-        hx-swap="innerHTML"
-      >
-        POST
-      </button>
-
-      <button
-        hx-get="/post-page"
-        hx-trigger="click"
-        hx-target="#response"
-        hx-swap="innerHTML"
-      >
-        Click Me!
-      </button>
+        <button
+          hx-get="/page/post"
+          hx-trigger="click"
+          hx-target="#parent-div"
+          hx-swap="innerHTML"
+        >
+          POST
+        </button>
+      </div>
     </div>
   </body>
 </html>
