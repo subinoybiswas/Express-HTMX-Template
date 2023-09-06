@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTMX-EXPRESS DEMO</title>
     <script
       src="https://unpkg.com/htmx.org@1.9.5"
       integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO"
       crossorigin="anonymous"
     ></script>
-    <title>HTMX-EXPRESS DEMO</title>
   </head>
   <body>
-    <div>Hi This is a Demo Div</div>
+    <form hx-post="/post" hx-target="#response">
+      <label>Name: <input type="text" name="name" /></label>
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div id="response"></div>
   </body>
 </html>
