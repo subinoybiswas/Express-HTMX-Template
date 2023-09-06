@@ -1,5 +1,5 @@
 const express = require("express");
-const pageRoutes = require("./routes/post");
+const postRoutes = require("./routes/post");
 var path = require("path");
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 3000;
@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views/index.html"));
 });
 
-app.use("/post", pageRoutes);
+app.use("/post", postRoutes);
 
 app.listen(PORT);
 console.log("Listening on ", PORT);

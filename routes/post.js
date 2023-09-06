@@ -1,9 +1,9 @@
 const express = require("express");
-const pageRouter = express.Router();
+const postRouter = express.Router();
 
-pageRouter.use("/", (req, res) => {
+postRouter.use("/", (req, res) => {
   res.send("Your Name is: " + req.body.fname +" "+ req.body.lname);
-  console.log(req.body.fname, req.body.lname);
+  //console.log(req.body.fname, req.body.lname);
 });
 
-module.exports = pageRouter;
+module.exports = postRouter;
