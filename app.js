@@ -1,7 +1,7 @@
 const express = require("express");
 const postRoutes = require("./routes/post");
 const getRoutes = require("./routes/get");
-const PageRoute = require("./routes/postPage.js");
+const PageRoute = require("./routes/pageRouter.js");
 
 var path = require("path");
 const bodyParser = require("body-parser");
