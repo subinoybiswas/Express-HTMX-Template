@@ -11,12 +11,34 @@
     ></script>
   </head>
   <body>
-    <form hx-post="/post" hx-target="#response">
-      <label>First Name: <input type="text" name="fname" /></label>
-      <label>Last Name: <input type="text" name="lname" /></label>
-      <input type="submit" value="Submit" />
-    </form>
+    <div id="#parent-div">
+      <div id="response"></div>
+      <button
+        hx-get="/page/get"
+        hx-trigger="click"
+        hx-target="#response"
+        hx-swap="outerHTML"
+      >
+        GET
+      </button>
 
-    <div id="response"></div>
+      <button
+        hx-get="/page/post"
+        hx-trigger="click"
+        hx-target="#response"
+        hx-swap="outerHTML"
+      >
+        POST
+      </button>
+
+      <button
+        hx-get="/post-page"
+        hx-trigger="click"
+        hx-target="#response"
+        hx-swap="outerHTML"
+      >
+        Click Me!
+      </button>
+    </div>
   </body>
 </html>
