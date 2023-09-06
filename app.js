@@ -5,16 +5,16 @@ const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 3000;
 const app = express();
 
+//Needed as the HTML is using HTML <form> which sends urlencoded message.
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
 app.set(express.static(path.join(__dirname, "views")));
-
-app.use("/post", pageRoutes);
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views/index.html"));
 });
+
+app.use("/post", pageRoutes);
 
 app.listen(PORT);
 console.log("Listening on ", PORT);

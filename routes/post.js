@@ -2,8 +2,8 @@ const express = require("express");
 const pageRouter = express.Router();
 
 pageRouter.use("/", (req, res) => {
-  res.send("Your Name is: " + req.body.name);
-  console.log(req.body.name);
+  res.send("Your Name is: " + req.body.fname +" "+ req.body.lname);
+  console.log(req.body.fname, req.body.lname);
 });
 
 module.exports = pageRouter;
