@@ -52,6 +52,14 @@ Installing HTMX or including HTMX is pretty simple. Just add a `script` tag with
       crossorigin="anonymous"
     ></script>
 ```
+## Deploymonet
+
+To run this project, make sure you have successfully installed the dependencies and you are in the root of the project.
+Now run the following command:
+
+```
+npm start
+```
 
 ## Contributing
 
