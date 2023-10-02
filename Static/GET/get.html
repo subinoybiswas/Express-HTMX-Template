@@ -1,15 +1,35 @@
-<h1>SEND A GET REQUEST</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Page</title>
+  <link rel="stylesheet" href="/Static/style.css">
+
+</head>
+<body>
+  <h1>SEND A GET REQUEST</h1>
 <ul>
   <li>
+   <a href="get-books.html">
     <button hx-get="/get/books" hx-target="#response">BOOKS</button>
+   </a>
   </li>
   <li>
-    <button hx-get="/get/movies" hx-target="#response">MOVIES</button>
+<a href="get-movies.html">
+  <button hx-get="/get/movies" hx-target="#response">MOVIES</button>
+</a>
   </li>
   <li>
-    <button hx-get="/get/tv" hx-target="#response">TV SERIES</button>
+<a href="get-tv.html">
+  <button hx-get="/get/tv" hx-target="#response">TV SERIES</button>
+</a>
   </li>
 </ul>
 
-<button hx-get="/home" hx-target="#all" hx-swap="innerHTML">HOME</button>
+<a href="/views/index.html">
+  <button hx-get="/home" hx-target="#all" hx-swap="innerHTML">HOME</button>
+</a>
 <div id="response"></div>
+</body>
+</html>

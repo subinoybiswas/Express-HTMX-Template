@@ -1,10 +1,24 @@
-<h1>SEND A SAMPLE POST REQUEST TO THE SERVER</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Page</title>
+  <link rel="stylesheet" href="/Static/style.css">
+</head>
+<body>
+  <h1>SEND A SAMPLE POST REQUEST TO THE SERVER</h1>
 <form hx-post="/post" hx-target="#response">
   <label>First Name: <input type="text" name="fname" /></label>
   <label>Last Name: <input type="text" name="lname" /></label>
   <input type="submit" value="Submit" />
 </form>
-<button hx-get="/home" hx-target="#all" hx-swap="innerHTML">HOME</button>
+<a href="/views/index.html">
+  <button hx-get="/home" hx-target="#all" hx-swap="innerHTML">HOME</button>
+</a>
 <h2>
   <div id="response"></div>
 </h2>
+
+</body>
+</html>

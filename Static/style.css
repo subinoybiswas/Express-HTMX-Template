@@ -1,0 +1,30 @@
+body{
+    background-color: aliceblue;
+    color: rgb(30, 30, 30);
+}
+h1{
+    color: rgb(16, 16, 63);
+}
+h2{
+    color: rgb(16, 16, 63);
+}
+h3{
+    color: rgb(16, 16, 63);
+}
+p{
+  color:rgb(29, 28, 28)
+}
+a{
+    color: rgb(13, 13, 15);
+}
+a:hover{
+    color: navy;
+}
+li{
+    list-style:circle;
+    color: rgb(89, 7, 58);
+    text-align: start;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
