@@ -9,17 +9,25 @@
       integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div id="all">
-      <div id="parent-div">
-        <h1>CHOOSE WHAT REQUEST TO MAKE</h1>
+  <body class="bg-gradient-to-b from-indigo-400 to-purple-600 font-sans">
+    <div id="all" class="min-h-screen flex items-center justify-center">
+      <div
+        id="parent-div"
+        class="bg-white bg-opacity-90 backdrop-blur-lg shadow-lg rounded-lg px-4 py-8"
+      >
+        <h1 class="text-3xl font-light text-center mb-4 text-gray-900">
+          CHOOSE WHAT REQUEST TO MAKE
+        </h1>
         <div id="response"></div>
+        <div class="flex flex-row justify-around">
         <button
           hx-get="/page/get"
           hx-trigger="click"
           hx-target="#parent-div"
           hx-swap="innerHTML"
+          class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 text-white px-6 py-3 rounded-md mx-2 focus:outline-none"
         >
           GET
         </button>
@@ -29,10 +37,13 @@
           hx-trigger="click"
           hx-target="#parent-div"
           hx-swap="innerHTML"
+          class="bg-gradient-to-r from-pink-500 to-red-600 hover:from-red-600 hover:to-pink-500 text-white px-6 py-3 rounded-md mx-2 focus:outline-none"
         >
           POST
         </button>
       </div>
+      </div>
     </div>
   </body>
+  
 </html>

@@ -1,10 +1,10 @@
-<h1>SEND A SAMPLE POST REQUEST TO THE SERVER</h1>
+<h1 class="text-lg md:text-3xl font-bold text-center mb-4 text-gray-600">SEND A SAMPLE POST REQUEST TO THE SERVER</h1>
 <form hx-post="/post" hx-target="#response">
-  <label>First Name: <input type="text" name="fname" /></label>
-  <label>Last Name: <input type="text" name="lname" /></label>
-  <input type="submit" value="Submit" />
+  <label class="md:text-lg text-xs font-light text-gray-900">First Name: <input class="border border-gray-300 focus:border-blue-500 focus:ring-blue-200 focus:outline-none rounded-md" type="text" name="fname" /></label>
+  <label class="md:text-lg text-xs font-light text-gray-900">Last Name: <input class="border border-gray-300 focus:border-blue-500 focus:ring-blue-200 focus:outline-none rounded-md" type="text" name="lname" /></label>
+  <input class="md:text-base text-xs px-2 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold  rounded-md shadow-md transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-400"  type="submit" value="Submit" />
 </form>
-<button hx-get="/home" hx-target="#all" hx-swap="innerHTML">HOME</button>
+<button class="md:text-xl text-lg font-light text-gray-900 transform transition-transform hover:scale-105" hx-get="/home" hx-target="#all" hx-swap="innerHTML">HOME</button>
 <h2>
-  <div id="response"></div>
+  <div class="md:text-lg text-xs font-light text-gray-900" id="response"></div>
 </h2>
